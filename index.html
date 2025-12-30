@@ -30,8 +30,8 @@ function resize() {
     let h = window.innerHeight;
     if (w / h > ratio) w = h * ratio;
     else h = w / ratio;
-    canvas.width = w;
-    canvas.height = h;
+    canvas.width = w+10;
+    canvas.height = h+20;
 }
 resize();
 window.addEventListener("resize", resize);
@@ -97,7 +97,7 @@ function loop() {
 
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
-    ctx.font = "48px Arial";
+    ctx.font = "70px Arial";
     ctx.fillText(fmt(now), cx, cy);
 
     const isNY =
