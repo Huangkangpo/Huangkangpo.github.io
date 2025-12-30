@@ -97,7 +97,7 @@ function loop() {
 
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
-    ctx.font = "90px Arial";
+    ctx.font = "83px Arial";
     ctx.fillText(fmt(now), cx, cy);
 
     const isNY =
@@ -108,7 +108,7 @@ function loop() {
         now.getMinutes() === 0;
 
     if (isNY) {
-        ctx.font = "44px Arial";
+        ctx.font = "44pxy Arial";
         ctx.fillText("Happy New Year", cx, cy + 80);
         if (Math.random() < 0.08) firework();
     }
